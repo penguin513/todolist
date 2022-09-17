@@ -13,6 +13,29 @@ ul li {
     list-style: none;
 }
 
+
+/* フラッシュメッセージ */
+.flush_message {
+    background: palegreen;
+    padding: 5px 20px;
+    margin-top: -3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flush_message svg {
+    width: 40px;
+}
+
+.close {
+    opacity: 0;
+    transition: opacity 1s;
+    display: none;
+}
+
+
+
 .navbar {
     margin: 2rem 0 2.5rem 0;
 }
@@ -41,6 +64,14 @@ a.my-navbar-item:hover {
     color: #ffffff;
 }
 
+.table th {
+    white-space: nowrap;
+}
+
+.table th:not(:nth-of-type(1)) {
+    text-align: center;
+}
+
 .table td:nth-child(2),
 .table td:nth-child(3),
 .table td:nth-child(4) {
@@ -48,7 +79,87 @@ a.my-navbar-item:hover {
     width: 1px;
 }
 
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+    vertical-align: middle;
+}
+
+.table td .label {
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.table td:last-child {
+    width: 62px;
+    min-width: 62px;
+}
+
+.table td a,
+.table td button {
+    color: white;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.table td a {
+    background: green;
+}
+
+.table td a:hover {
+    opacity: .8;
+}
+
+.table td button {
+    margin: 0;
+    background: rgb(225 41 0);
+    padding: 8.22px 10px;
+}
+
+.table td button:hover {
+    opacity: .8;
+}
+
 .form-control[disabled],
 .form-control[readonly] {
     background-color: #fff;
+}
+
+.list-group {
+    padding-bottom: 15px;
+}
+
+.list-group-el {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.list-group-el a {
+    width: 100%;
+    margin-right: 5px;
+}
+
+.list-group-el form {
+    white-space: nowrap;
+}
+
+.list-group-el form button {
+    color: white;
+    background: rgb(225 41 0);
+    font-size: 1.3rem;
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.list-group-el form button:hover {
+    opacity: .8;
 }
