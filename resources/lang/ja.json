@@ -24,5 +24,6 @@
     "Logout": "ログアウト",
     "Dashboard": "お知らせ",
     "You are logged in!": "ログインしました！",
-    "We can't find a user with that email address.": "そちらのメールアドレスを持つユーザが見つかりません。"
+    "We can't find a user with that email address.": "そちらのメールアドレスを持つユーザが見つかりません。",
+    "Please wait before retrying.": "しばらく待ってから再試行してください。"
 }
